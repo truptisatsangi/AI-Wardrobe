@@ -1,0 +1,2 @@
+class ClothNotFoundError(Exception):
+    pass 
