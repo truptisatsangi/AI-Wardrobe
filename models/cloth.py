@@ -1,9 +1,10 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+from uuid import uuid4
 
 class Cloth(BaseModel):
-    id: str
+    id: str = Field(default_factory=lambda: str(uuid4()))
     name: str
     colour: str
-    occassion: str
+    occasion: str
 
 
