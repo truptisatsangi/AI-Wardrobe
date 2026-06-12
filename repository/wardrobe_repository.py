@@ -16,7 +16,7 @@ class WardrobeRepository:
     def update_cloth(self, cloth_id: str, cloth: Cloth):
         self.clothes[cloth_id] = cloth
 
-    def remove_cloth(self, cloth_id: str):
+    def delete_cloth(self, cloth_id: str):
         self.clothes.pop(cloth_id, None)
 
 
