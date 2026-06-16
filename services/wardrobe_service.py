@@ -45,10 +45,10 @@ class WardrobeService:
         if update.colour is not None:
             cloth.colour = update.colour
             
-        if update.occassion is not None:
-            cloth.occassion = update.occassion
+        if update.occasion is not None:
+            cloth.occasion = update.occasion
 
-        self.repository.update_cloth(cloth)
+        self.repository.update_cloth(cloth_id, cloth)
         return cloth
             
 

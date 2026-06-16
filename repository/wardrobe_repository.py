@@ -11,7 +11,7 @@ class WardrobeRepository:
         return self.clothes.get(cloth_id)
     
     def get_all_clothes(self) -> list[Cloth]:
-        return list(self.clothes.values)
+        return list(self.clothes.values())
     
     def update_cloth(self, cloth_id: str, cloth: Cloth):
         self.clothes[cloth_id] = cloth
