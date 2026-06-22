@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, APIRouter
+from fastapi import HTTPException, APIRouter
 from services import WardrobeService
 from repository.wardrobe_repository import WardrobeRepository
 from models import ClothCreate, ClothUpdate, Cloth
